@@ -6,10 +6,10 @@ export default function Footer() {
         <div className={styles.footer}>
 				<section className={styles.footerP}>
 					<p className={styles.footerInfo}>
-						Rezervations
+						Резервации
 					</p>
 					<p className={styles.footerInfo}>
-						Contacts
+						Контакти
 					</p>
 				</section>
 				<section className={styles.copyP}>
