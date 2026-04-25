@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(14, 4, 36);
+    margin-top: -1em;
+    margin-bottom: -1em;
+    padding: 0.2em;
+}
+
+.footerP {
+    padding-left: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.footerInfo {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footerInfo:hover {
+    transform: scale(1.05);
+    color: rgb(225, 223, 229);;
+}
+
+.copy {
+    color: #fff;
+}
