@@ -1,0 +1,51 @@
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(31, 3, 3);
+    border-right: 1px solid #888;
+}
+
+.choose {
+    margin-top: 1em;
+    margin-left: -2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.choose h3 i {
+    margin-right: 0.5em;
+}
+
+.workingTime {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2em;
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 1em;
+}
+
+.icon > * {
+    font-size: 2em;
+    color: #D97706;
+}
+
+.icons {
+    margin-top: 3em;
+    display: flex;
+    gap: 4em;
+}
+
+.icons > * {
+    font-size: 1.2em;
+}

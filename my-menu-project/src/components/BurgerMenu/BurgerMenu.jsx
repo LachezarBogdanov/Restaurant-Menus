@@ -23,7 +23,7 @@ export default function BurgerMenu() {
 
                 <nav className={`${styles.menu} ${isActive ? styles.active : ''}`} id={styles.menu}>
                     <div className={styles.wrapp}>
-                        <h2>Menu</h2>
+                        <h2>Меню</h2>
                         <div className={styles.close} onClick={() => setIsActive(false)}><FontAwesomeIcon icon={faXmark} /></div>
                     </div>
                     <a href="#">Кухня</a>
