@@ -1,0 +1,39 @@
+.product {
+    max-width: 300px;
+    max-height: 330px;
+    background-color: rgb(51, 7, 7);
+    border-radius: 1em;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.product:hover {
+    transform: scale(1.02);
+    border-color: rgba(48, 48, 48, 0.2);
+    box-shadow: 0 0 20px #fff;
+}
+
+.picture {
+    width: 100%;
+    height: 180px;
+}
+
+.productInfo {
+    padding: 0.5em 0.5em 2em 0.7em;
+}
+
+.productInfo h3 {
+    margin-top: 0;
+}
+
+.description {
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    color: #cacaca;
+}
+
+.price {
+    color: #D97706;
+    font-weight: bold;
+}
