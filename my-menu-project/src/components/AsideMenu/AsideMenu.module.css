@@ -41,6 +41,12 @@ aside {
     color: #D97706;
 }
 
+.active {
+    background-color: #e2e2e2;
+    border-right: 4px solid #D97706;;
+    color: #D97706;
+}
+
 .choose h3 i {
     margin-right: 0.5em;
 }

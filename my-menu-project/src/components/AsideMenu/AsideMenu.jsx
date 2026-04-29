@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import styles from './AsideMenu.module.css'
 
 export default function AsideMenu() {
+
+    const [selectedCategory, setSelectedCategory] = useState('Брънч');
+
+    const categories = [
+        { name: 'Брънч', icon: 'fa-bacon' },
+        { name: 'Основно', icon: 'fa-bowl-food' },
+        { name: 'Леко меню', icon: 'fa-plate-wheat' },
+        { name: 'Premium Selection', icon: 'fa-filter' },
+        { name: 'Поке Бол', icon: 'fa-bowl-rice' }
+    ];
+
     return (
         <>
             <aside>
@@ -8,11 +20,15 @@ export default function AsideMenu() {
                     <h1>Ocean View</h1>
                 </section>
                 <section className={styles.choose}>
-                    <h3><i class="fa-solid fa-bacon"></i> Брънч</h3>
-                    <h3><i class="fa-solid fa-bowl-food"></i> Основно</h3>
-                    <h3><i class="fa-solid fa-plate-wheat"></i> Леко меню</h3>
-                    <h3><i class="fa-solid fa-filter"></i> Premium Selection</h3>
-                    <h3><i class="fa-solid fa-bowl-rice"></i>Поке Бол</h3>
+                    { categories.map((cat) => (
+                        <h3
+                            key={cat.name}
+                            className={selectedCategory === cat.name ? styles.active : ''}
+                            onClick={() => setSelectedCategory(cat.name)}
+                        >
+                            <i className={`fa-solid ${cat.icon}`}></i> {cat.name}
+                        </h3>
+                    )) }
                 </section>
                 <section className={styles.workingTime}>
                     <div className={styles.icon}>
@@ -20,7 +36,7 @@ export default function AsideMenu() {
                     </div>
                     <div className={styles.info}>
                         <h3>Работно време</h3>
-                        <p>Поке бол</p>
+                        <p>Всеки ден</p>
                         <h4>10:00 - 22:30</h4>
                     </div>
                 </section>
