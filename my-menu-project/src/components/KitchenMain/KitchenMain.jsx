@@ -53,6 +53,18 @@ export default function KitchenMain() {
                             <p className={styles.price}>8.57 eur.</p>
                         </div>
                     </div>
+                     <div className={styles.product}>
+                        <div className={styles.productHeader}>
+                            <img className={styles.picture} src="eggs.jpg" alt="eggsBenedict" />
+                        </div>
+                        <div className={styles.productInfo}>
+                            <h3>Яйца Бенедикт</h3>
+                            <p className={styles.description}>
+                                Поширани яйца, холандски сос, спанак, английски мъфин
+                            </p>
+                            <p className={styles.price}>8.57 eur.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <KitchenPageFooter />
