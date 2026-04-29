@@ -20,7 +20,7 @@
     position: fixed;
     border-radius: 1em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0.5);
-    margin-top: 2em;
+    margin-top: 1em;
     width: 73%;
     margin-left: 20em;
     padding: 3em 1.5em;
@@ -40,7 +40,8 @@
 }
 
 .heading .p {
-    color: #e4e4e4;
+    color: #c6c6c6;
+    font-size: 1.1em;
 }   
 
 .heading .clock {
@@ -48,7 +49,93 @@
 }
 
 .selectedMeal {
-    margin-top: 12.5em;
-    margin-left: -22em;
+    margin-top: 12em;
+    margin-left: -23.5em;
     font-weight: normal;
+}
+
+/* --------------------------------------------------------- */
+
+.products {
+    margin-top: 0.5em;
+    display: flex;
+    gap: 1em;
+    margin-left: 22%;   
+}
+
+.product {
+    max-width: 350px;
+    max-height: 300px;
+    background-color: rgb(51, 7, 7);
+    border-radius: 1em;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(48, 48, 48, 0.2);
+    box-shadow: 0 5px 20px #fff;
+}
+
+.picture {
+    width: 100%;
+    height: 180px;
+}
+
+.productInfo {
+    padding: 0.3em 1em;
+}
+
+.productInfo h3 {
+    margin-top: 0;
+}
+
+.description {
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    color: #cacaca;
+}
+
+.price {
+    color: #D97706;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------- */
+
+.pageFooter {
+    display: flex;
+    margin-top: 1.5em;
+    margin-left: 20em;
+    gap: 7em;
+    width: 75%;
+    background-color: red;
+    justify-content: center;
+    background-color: rgb(31, 3, 3);
+}
+
+.footerCard {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.footerCard:not(:nth-child(3))::after {
+    content: '';
+
+}
+
+.aboveIcon i {
+    color: #D97706;
+    font-size: 1.5em;
+}
+
+.specials h4 {
+    margin-bottom: -0.5em;
+}
+
+.specials p {
+    color: #bababa;
 }
