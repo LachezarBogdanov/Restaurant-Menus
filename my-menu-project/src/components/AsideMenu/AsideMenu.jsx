@@ -8,11 +8,11 @@ export default function AsideMenu() {
                     <h1>Ocean View</h1>
                 </section>
                 <section className={styles.choose}>
-                    <h3><i class="fa-solid fa-bacon"></i> Brunch</h3>
-                    <h3><i class="fa-solid fa-bowl-food"></i> Osnovno</h3>
-                    <h3><i class="fa-solid fa-plate-wheat"></i> Leko menu</h3>
+                    <h3><i class="fa-solid fa-bacon"></i> Брънч</h3>
+                    <h3><i class="fa-solid fa-bowl-food"></i> Основно</h3>
+                    <h3><i class="fa-solid fa-plate-wheat"></i> Леко меню</h3>
                     <h3><i class="fa-solid fa-filter"></i> Premium Selection</h3>
-                    <h3><i class="fa-solid fa-bowl-rice"></i>Poke Bowl</h3>
+                    <h3><i class="fa-solid fa-bowl-rice"></i>Поке Бол</h3>
                 </section>
                 <section className={styles.workingTime}>
                     <div className={styles.icon}>

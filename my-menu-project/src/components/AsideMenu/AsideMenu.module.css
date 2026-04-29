@@ -7,17 +7,38 @@ aside {
     padding: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     background-color: rgb(31, 3, 3);
     border-right: 1px solid #888;
 }
 
+.header {
+    margin-left: 3em;
+}
+
 .choose {
+    width: 100%;
     margin-top: 1em;
-    margin-left: -2em;
     display: flex;
     flex-direction: column;
     gap: 0.3em;
+}
+
+.choose h3 {
+    height: 35px;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 0.5em;
+    margin-left: -0.83em;
+    padding-left: 1.5em;
+    margin-top: 0.2em;
+    transition: 0.2s ease-in-out;
+}
+
+.choose h3:hover {
+    background-color: #e2e2e2;
+    border-right: 4px solid #D97706;;
+    color: #D97706;
 }
 
 .choose h3 i {
@@ -44,6 +65,7 @@ aside {
     margin-top: 3em;
     display: flex;
     gap: 4em;
+    margin-left: 2.5em;
 }
 
 .icons > * {
