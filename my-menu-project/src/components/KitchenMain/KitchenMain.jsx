@@ -1,17 +1,31 @@
+import { useState } from 'react';
 import AsideMenu from '../AsideMenu/AsideMenu';
 import KitchenPageFooter from '../KitchenPageFooter/KitchenPageFooter';
 import styles from './KitchenMain.module.css'
 
 export default function KitchenMain() {
+
+    const [selectedCategory, setSelectedCategory] = useState('Брънч');
+
+    const categoryDescription = {
+        'Брънч': 'Перфектният старт на деня',
+        'Основно': 'Вашето Гурме изживяване'
+    }
+
     return (
         <>
-            <AsideMenu />
+            <AsideMenu selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
 
             <div className={styles.wrapper}>
                 <section className={styles.heading}>
-                    <h1>Брънч</h1>
-                    <p className={styles.p}>Перфектният старт на деня</p>
-                    <p className={styles.clock}><i class="fa-regular fa-clock"></i> 10:00 - 16:00</p>
+                    <h1>{selectedCategory}</h1>
+                    <p className={styles.p}>{categoryDescription[selectedCategory]}</p>
+                    <p className={styles.clock}><i class="fa-regular fa-clock"></i>
+                    {
+                     selectedCategory === 'Брънч' ? '10:00 - 16:00':
+                     selectedCategory === 'Основно' ? '11:00 - 23:00': '' 
+                    }               
+                    </p>
                 </section>
 
                 <h2 className={styles.selectedMeal}>Препоръчани ястия</h2>

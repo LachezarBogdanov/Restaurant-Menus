@@ -1,9 +1,10 @@
-import { useState } from 'react';
 import styles from './AsideMenu.module.css'
 
-export default function AsideMenu() {
+export default function AsideMenu({
+    selectedCategory,
+    setSelectedCategory
+}) {
 
-    const [selectedCategory, setSelectedCategory] = useState('Брънч');
 
     const categories = [
         { name: 'Брънч', icon: 'fa-bacon' },
