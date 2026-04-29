@@ -103,39 +103,3 @@
     font-weight: bold;
 }
 
-/* ----------------------------------------------------------- */
-
-.pageFooter {
-    display: flex;
-    margin-top: 1.5em;
-    margin-left: 20em;
-    gap: 7em;
-    width: 75%;
-    background-color: red;
-    justify-content: center;
-    background-color: rgb(31, 3, 3);
-}
-
-.footerCard {
-    display: flex;
-    gap: 2em;
-    align-items: center;
-}
-
-.footerCard:not(:nth-child(3))::after {
-    content: '';
-
-}
-
-.aboveIcon i {
-    color: #D97706;
-    font-size: 1.5em;
-}
-
-.specials h4 {
-    margin-bottom: -0.5em;
-}
-
-.specials p {
-    color: #bababa;
-}
