@@ -3,6 +3,7 @@ import styles from './BurgerMenu.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 
 export default function BurgerMenu() {
@@ -26,7 +27,7 @@ export default function BurgerMenu() {
                         <h2>Меню</h2>
                         <div className={styles.close} onClick={() => setIsActive(false)}><FontAwesomeIcon icon={faXmark} /></div>
                     </div>
-                    <a href="#">Кухня</a>
+                    <Link to={'/kitchen'}>Кухня</Link>
                     <a href="#">Бар</a>
                     <a href="#">Десерти</a>
                 </nav>

@@ -1,10 +1,10 @@
+import { Link } from 'react-router-dom';
 import styles from './AsideMenu.module.css'
 
 export default function AsideMenu({
     selectedCategory,
     setSelectedCategory
 }) {
-
 
     const categories = [
         { name: 'Брънч', icon: 'fa-bacon' },
@@ -18,7 +18,7 @@ export default function AsideMenu({
         <>
             <aside>
                 <section className={styles.header}>
-                    <h1>Ocean View</h1>
+                    <Link className={styles.titleHead} to={'/'}>Ocean View</Link>
                 </section>
                 <section className={styles.choose}>
                     { categories.map((cat) => (

@@ -12,6 +12,12 @@ aside {
     border-right: 1px solid #888;
 }
 
+.titleHead {
+    font-size: 2.2em;
+    text-decoration: none;
+    color: #fff;
+}
+
 .header {
     margin-left: 3em;
 }
