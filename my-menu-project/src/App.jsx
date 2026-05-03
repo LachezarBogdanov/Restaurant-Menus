@@ -4,6 +4,7 @@ import './App.css'
 
 import Home from './components/Home/Home';
 import KitchenMain from './components/KitchenMain/KitchenMain';
+import Details from './components/Details/Details';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/kitchen' element={<KitchenMain />}></Route>
+        <Route path='/details' element={<Details />}></Route>
       </Routes>
     </BrowserRouter>
     </>
