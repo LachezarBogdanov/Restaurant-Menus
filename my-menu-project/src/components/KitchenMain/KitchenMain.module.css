@@ -24,13 +24,6 @@
     width: 68%;
     margin-left: 20em;
     padding: 3em 1.5em;
-    background: 
-    linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5) 100%,
-      rgba(10,10,10,0.2)
-    ),
-    url('../../../public/benedikt.jpg') center/cover no-repeat;
 }
 
 .heading h1 {

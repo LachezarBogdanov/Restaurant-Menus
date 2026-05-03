@@ -38,7 +38,7 @@ export default function AsideMenu({
                     <div className={styles.info}>
                         <h3>Работно време</h3>
                         <p>Всеки ден</p>
-                        <h4>10:00 - 22:30</h4>
+                        <h4>10:00 - 00:00</h4>
                     </div>
                 </section>
                 <section className={styles.icons}>
