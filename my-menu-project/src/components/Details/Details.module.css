@@ -44,7 +44,7 @@
 .detailsHeader > * {
     margin-top: 3em;
     margin-left: 3em;
-    z-index: 1000;
+    z-index: 500;
 }
 
 .desc {
