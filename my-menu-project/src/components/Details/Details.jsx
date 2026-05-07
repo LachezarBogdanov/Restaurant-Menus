@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import styles from './Details.module.css'
 import { useState } from 'react';
+import Footer from '../Footer/Footer';
 
 export default function Details() {
 
@@ -40,8 +41,39 @@ export default function Details() {
                     </div>
                 </section>
                 <section className={styles.detailsMain}>
-
+                    <div className={styles.wrap}>
+                        <div className={styles.description}>
+                            <h2>Описание</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nobis dolores temporibus aperiam quidem magni sunt atque modi pariatur ea!</p>
+                            <h2 className={styles.ingridients}>Съставки</h2>
+                            <div className={styles.ingCards}>
+                                <p className={styles.ingridient}>Яйца</p>
+                                <p className={styles.ingridient}>Холандски сос</p>
+                                <p className={styles.ingridient}>Спанак</p>
+                                <p className={styles.ingridient}>Английски мъфин</p>
+                                <p className={styles.ingridient}>Бекон</p>
+                            </div>
+                            <h2 className={styles.alergens}>Алергени</h2>
+                            <div className={styles.alerCards}>
+                                <p className={styles.egg}><i class="fa-solid fa-egg"></i> Яйца</p>
+                                <p className={styles.milk}><i class="fa-solid fa-blender"></i> Млечни продукти</p>
+                                <p className={styles.gluten}><i class="fa-solid fa-leaf"></i> Глутен</p>
+                            </div>
+                        </div>
+                        <div className={styles.meals}>
+                            <h2>Препоръчани ястия</h2>
+                            <div className={styles.meal}>
+                                <img src="PorkRibs.webp" alt="asd" />
+                                <h3>Авокадо тост</h3>
+                                <div className={styles.mealPriceAndAdd}>
+                                    <p className={styles.mealPrice}>11.50 eur.</p>
+                                    <span className={styles.add}>+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+                <Footer />
             </div>
         </>
     );
