@@ -1,7 +1,7 @@
 .product {
-    min-width: 300px;
-    max-width: 300px;
-    max-height: 330px;
+    min-width: 330px;
+    max-width: 330px;
+    max-height: 310px;
     background-color: rgb(51, 7, 7);
     border-radius: 1em;
     overflow: hidden;

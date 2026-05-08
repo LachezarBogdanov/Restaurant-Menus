@@ -43,7 +43,7 @@
 
 .selectedMeal {
     margin-top: 12em;
-    margin-left: -23.5em;
+    margin-left: -20em;
     font-weight: normal;
 }
 
@@ -53,10 +53,9 @@
 
 .products {
     padding: 1.2em;
-    margin-block: -1em;
     display: flex;
-    gap: 2em;
-    width: 70%; 
+    gap: 1em;
+    width: 72%; 
     margin-left: 22em; 
     max-height: 70vh; 
     overflow-y: auto;  

@@ -182,7 +182,7 @@ export default function KitchenMain() {
             <AsideMenu selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
 
             <div className={styles.wrapper}>
-                <section 
+                <section
                     className={styles.heading}
                     style={{
                         backgroundImage: `
