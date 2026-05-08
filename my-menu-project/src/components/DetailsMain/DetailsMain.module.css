@@ -1,0 +1,60 @@
+.detailsMain {
+    width: 100%;
+    height: 60%;
+    background-color: rgb(31, 3, 3);
+    padding-top: 2em;
+}
+
+.wrap {
+    display: flex;
+    gap: 0.5em;
+    width: 90%;
+    background-color: rgb(28, 1, 1);
+    margin: 0 auto;
+    border-radius: 1em;
+    border: 1px solid rgb(136, 131, 131);
+}
+
+.description {
+    width: 40%;
+    padding: 1em;
+    padding-left: 2em;
+    margin-left: 1.5em;
+}
+
+.meals {
+    width: 50%;
+    padding-top: 1.2em;
+}
+
+.ingCards {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.ingridients {
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+.ingridient {
+    padding: 0.3em 0.4em;
+    border-radius: 20px;
+    border: 1px solid #f68606;
+}
+
+.alerCards {
+    display: flex;
+    gap: 2em;
+}
+
+.alerCards p i {
+    margin-right: 0.5em;
+    color: #f68606;
+}
+
+.mealsWrapper {
+    display: flex;
+    gap: 0.5em;
+}

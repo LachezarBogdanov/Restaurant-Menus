@@ -1,0 +1,54 @@
+.meal {
+    width: 200px;
+    background-color: rgb(24, 1, 1);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgb(43, 43, 43);
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.meal:hover {
+    transform: translateY(-5px) scale(1.0);
+    box-shadow: 0 2px 10px #fff;
+}
+
+.meal img {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    display: block;
+    max-width: none;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.mealPriceAndAdd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -1em;
+}
+
+.mealPrice {
+    color: #f68606;
+}
+
+.add {
+    color: #f68606;
+    border: 1px solid #888;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.add:hover {
+    transform: scale(1.1);
+    border: 1px solid #f68606;
+    color: #fff;
+}
