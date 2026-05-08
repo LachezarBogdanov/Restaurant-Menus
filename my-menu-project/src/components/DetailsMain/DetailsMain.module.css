@@ -20,6 +20,17 @@
     padding: 1em;
     padding-left: 2em;
     margin-left: 1.5em;
+    position: relative;
+}
+
+.description::after {
+    content: '';
+    position: absolute;
+    right: 9px;
+    top: 20px;
+    width: 0.5px;
+    height: 90%;
+    background-color: rgb(99, 98, 98);
 }
 
 .meals {
