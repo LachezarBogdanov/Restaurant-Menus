@@ -19,7 +19,7 @@ export default function AsideMenu({
 
     const barCategorie = [
          { name: 'Топли напитки', icon: 'fa-coffee' },
-        { name: 'Безалкохолни и Освежаващи', icon: 'fa-wine-bottle' },
+        { name: 'Безалкохолни напитки', icon: 'fa-wine-bottle' },
         { name: 'Алкохолни напитки', icon: 'fa-glass-martini' },
         { name: 'Mocktails', icon: 'fa-cocktail' },
     ];
