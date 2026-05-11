@@ -1,18 +1,30 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './AsideMenu.module.css'
 
 export default function AsideMenu({
     selectedCategory,
     setSelectedCategory
 }) {
+    const location = useLocation();    
 
-    const categories = [
+    const path = location.pathname.split('/')[1];
+    
+    const kitchenCategorie = [
         { name: 'Брънч', icon: 'fa-bacon' },
         { name: 'Основно', icon: 'fa-bowl-food' },
         { name: 'Леко меню', icon: 'fa-plate-wheat' },
         { name: 'Premium Selection', icon: 'fa-filter' },
         { name: 'Поке Бол', icon: 'fa-bowl-rice' }
     ];
+
+    const barCategorie = [
+         { name: 'Топли напитки', icon: 'fa-coffee' },
+        { name: 'Безалкохолни и Освежаващи', icon: 'fa-wine-bottle' },
+        { name: 'Алкохолни напитки', icon: 'fa-glass-martini' },
+        { name: 'Mocktails', icon: 'fa-cocktail' },
+    ];
+
+    const currentCategories = path == 'kitchen' ? kitchenCategorie : barCategorie;
 
     return (
         <>
@@ -21,7 +33,7 @@ export default function AsideMenu({
                     <Link className={styles.titleHead} to={'/'}>Ocean View</Link>
                 </section>
                 <section className={styles.choose}>
-                    { categories.map((cat) => (
+                    { currentCategories.map((cat) => (
                         <h3
                             key={cat.name}
                             className={selectedCategory === cat.name ? styles.active : ''}
