@@ -195,20 +195,37 @@ export const barData = {
         'Безалкохолни напитки': {
             description: 'Свежест без компромиси – домашни лимонади и натурални вкусове.',
             workingTime: '12:00 - 00:00',
-            bannerImg: 'wine-bg.webp',
-            products: []
+            bannerImg: 'soft_drinks.webp',
+            products: [
+                { name: 'Лимонада Бъз и Краставица', description: 'Домашен сироп от бъз, пресни краставици и газирана вода', price: '5.20 eur.', img: 'elderflower.webp' },
+                { name: 'Фреш Микс', description: 'Прясно изцеден портокал, грейпфрут и щипка джинджифил', price: '5.80 eur.', img: 'fresh_mix.webp' },
+                { name: 'Сан Пелегрино', description: 'Италианска газирана минерална вода (750мл)', price: '6.50 eur.', img: 'pellegrino.webp' },
+                { name: 'Студен чай Матча', description: 'Японски зелен чай матча, лайм и органичен мед', price: '5.50 eur.', img: 'matcha_tea.webp' },
+                { name: 'Тоник Роза', description: 'Премиум розов тоник с листенца от рози и канела', price: '4.80 eur.', img: 'rose_tonic.webp' }
+            ]
         },
         'Алкохолни напитки': {
             description: 'Изящна селекция от класически коктейли и премиум отлежали питиета.',
             workingTime: '12:00 - 00:00',
-            bannerImg: 'wine-bg.webp',
-            products: []
+            bannerImg: 'alcohol_drinks.webp',
+            products: [
+                { name: 'Negroni Sbagliato', description: 'Кампари, сладък вермут и пенливо вино Prosecco', price: '12.50 eur.', img: 'negroni.webp' },
+                { name: 'Old Fashioned Reserve', description: '12-годишен бърбън, ангостура битер и кафява захар', price: '14.80 eur.', img: 'old_fashioned.webp' },
+                { name: 'Espresso Martini', description: 'Водка, прясно еспресо и ликьор от печени кафени зърна', price: '13.00 eur.', img: 'espresso_martini.webp' },
+                { name: 'Whiskey Sour', description: 'Уиски, пресен лимонов сок, захарен сироп и яйчен белтък', price: '11.50 eur.', img: 'whiskey_sour.webp' },
+                { name: 'Aperol Spritz', description: 'Класически венециански аперитив с просеко и резен портокал', price: '10.50 eur.', img: 'aperol.webp' }
+            ]
         },
         'Mocktails': {
             description: 'Целият блясък на коктейлите, но без капка алкохол. Наслада за сетивата.',
             workingTime: '12:00 - 00:00',
-            bannerImg: 'wine-bg.webp',
-            products: []
+            bannerImg: 'mocktails.webp',
+            products: [
+                { name: 'Virgin Passion Fruit', description: 'Маракуя, ванилия, пресен лайм и тоник', price: '8.90 eur.', img: 'virgin_passion.webp' },
+                { name: 'Apple & Ginger Fizz', description: 'Ябълков сок, домашен джинджифилов сироп и сода', price: '7.50 eur.', img: 'apple_fizz.webp' },
+                { name: 'Cucumber Cooler', description: 'Краставица, мента, сок от лайм и щипка морска сол', price: '7.80 eur.', img: 'cucumber_cooler.webp' },
+                { name: 'No-Jito Berry', description: 'Горски плодове, прясна мента, лайм и сода', price: '8.20 eur.', img: 'berry_nojito.webp' }
+            ]
         },
     }
 };
