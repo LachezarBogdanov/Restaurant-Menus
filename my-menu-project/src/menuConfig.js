@@ -229,3 +229,58 @@ export const barData = {
         },
     }
 };
+
+export const dessertData = {
+    categories: [
+        { name: 'Торти и Тартове' }, 
+        { name: 'Сладоледени изкушения' }, 
+        { name: 'Традиционни десерти' }, 
+        { name: 'Здравословни сладки' }
+    ],
+    details: {
+        'Торти и Тартове': {
+            description: 'Ръчно приготвени шедьоври с фини кремове, белгийски шоколад и пресни плодове.',
+            workingTime: '10:00 - 00:00',
+            bannerImg: 'cakes_bg.webp',
+            products: [
+                { name: 'Шоколадово Суфле', description: 'С течен център от черен шоколад и топка ванилов сладолед', price: '7.80 eur.', img: 'souffle.webp' },
+                { name: 'Лимонов Тарт', description: 'Хрупкаво маслено тесто с нежен лимонов крем и италиански меренг', price: '6.50 eur.', img: 'lemon_tart.webp' },
+                { name: 'Червено Кадифе', description: 'Класическа торта с фин крем от маскарпоне и нежен пандишпан', price: '7.20 eur.', img: 'red_velvet.webp' },
+                { name: 'Чийзкейк с Боровинки', description: 'Нюйоркски стил чийзкейк с домашно сладко от горски боровинки', price: '6.90 eur.', img: 'cheesecake.webp' }
+            ]
+        },
+        'Сладоледени изкушения': {
+            description: 'Домашно приготвено джелато и сорбета, поднесени с хрупкави добавки.',
+            workingTime: '10:00 - 00:00',
+            bannerImg: 'ice_cream_bg.webp',
+            products: [
+                { name: 'Джелато Микс', description: 'Три топки занаятчийски сладолед по Ваш избор', price: '5.50 eur.', img: 'gelato.webp' },
+                { name: 'Сорбе от Манго', description: 'Освежаващо сорбе от зрели плодове манго и лайм', price: '4.80 eur.', img: 'mango_sorbet.webp' },
+                { name: 'Афогато Класик', description: 'Ванилов сладолед, „удавен“ в горещо италианско еспресо', price: '5.20 eur.', img: 'affogato.webp' },
+                { name: 'Сплит с Карамел', description: 'Сладолед солен карамел с хрупкави лешници и вафлена пура', price: '6.30 eur.', img: 'caramel_split.webp' }
+            ]
+        },
+        'Традиционни десерти': {
+            description: 'Познати вкусове, поднесени с модерен почерк и много любов.',
+            workingTime: '10:00 - 00:00',
+            bannerImg: 'traditional_bg.webp',
+            products: [
+                { name: 'Тирамису Еспресо', description: 'Бишкоти Савоярди, напоени със силно кафе и крем Маскарпоне', price: '7.50 eur.', img: 'tiramisu.webp' },
+                { name: 'Крем Брюле', description: 'Класически френски десерт с истинска ванилия и хрупкава захарна коричка', price: '6.80 eur.', img: 'brulee.webp' },
+                { name: 'Павлова с Ягоди', description: 'Ефирен целувчен блат със сметанов крем и пресни ягоди', price: '7.40 eur.', img: 'pavlova.webp' },
+                { name: 'Брауни с Орехи', description: 'Топло шоколадово брауни с парченца орехи и карамелен сос', price: '6.20 eur.', img: 'brownie.webp' }
+            ]
+        },
+        'Здравословни сладки': {
+            description: 'Наслада без вина – десерти без рафинирана захар и глутен.',
+            workingTime: '10:00 - 00:00',
+            bannerImg: 'healthy_bg.webp',
+            products: [
+                { name: 'Суров Чийзкейк', description: 'Основа от фурми и ядки с крем от кашу и малини', price: '8.20 eur.', img: 'raw_cake.webp' },
+                { name: 'Чиа Пудинг', description: 'С кокосово мляко, манго и филирани бадеми', price: '5.90 eur.', img: 'chia_pudding.webp' },
+                { name: 'Шоколадово Авокадо', description: 'Мус от авокадо, сурово какао и кленов сироп', price: '6.50 eur.', img: 'avocado_mousse.webp' },
+                { name: 'Плодова Салата Deluxe', description: 'Екзотични плодове с пресен босилек и ментов дресинг', price: '5.50 eur.', img: 'fruit_salad.webp' }
+            ]
+        }
+    }
+};

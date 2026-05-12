@@ -5,9 +5,10 @@ export default function AsideMenu({
     selectedCategory,
     setSelectedCategory
 }) {
-    const location = useLocation();    
+    const location = useLocation();
 
     const path = location.pathname.split('/')[1];
+
     
     const kitchenCategorie = [
         { name: 'Брънч', icon: 'fa-bacon' },
@@ -16,16 +17,30 @@ export default function AsideMenu({
         { name: 'Premium Selection', icon: 'fa-filter' },
         { name: 'Поке Бол', icon: 'fa-bowl-rice' }
     ];
-
+    
     const barCategorie = [
-         { name: 'Топли напитки', icon: 'fa-coffee' },
+        { name: 'Топли напитки', icon: 'fa-coffee' },
         { name: 'Безалкохолни напитки', icon: 'fa-wine-bottle' },
         { name: 'Алкохолни напитки', icon: 'fa-glass-martini' },
         { name: 'Mocktails', icon: 'fa-cocktail' },
     ];
 
-    const currentCategories = path == 'kitchen' ? kitchenCategorie : barCategorie;
+    const desertCategorie = [
+        { name: 'Торти и Тартове', icon: 'fa-cake-candles' },
+        { name: 'Сладоледени изкушения', icon: 'fa-ice-cream' },
+        { name: 'Традиционни десерти', icon: 'fa-cookie-bite' },
+        { name: 'Здравословни сладки', icon: 'fa-leaf' }
+    ];
+    
+    let currentCategories = [];
 
+    if (path === 'bar') {
+        currentCategories = barCategorie;
+    } else if (path === 'deserts') {
+        currentCategories = desertCategorie;
+    } else {
+        currentCategories = kitchenCategorie;
+    }
     return (
         <>
             <aside>
@@ -33,7 +48,7 @@ export default function AsideMenu({
                     <Link className={styles.titleHead} to={'/'}>Ocean View</Link>
                 </section>
                 <section className={styles.choose}>
-                    { currentCategories.map((cat) => (
+                    {currentCategories.map((cat) => (
                         <h3
                             key={cat.name}
                             className={selectedCategory === cat.name ? styles.active : ''}
@@ -41,7 +56,7 @@ export default function AsideMenu({
                         >
                             <i className={`fa-solid ${cat.icon}`}></i> {cat.name}
                         </h3>
-                    )) }
+                    ))}
                 </section>
                 <section className={styles.workingTime}>
                     <div className={styles.icon}>

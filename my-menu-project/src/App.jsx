@@ -16,6 +16,7 @@ function App() {
         <Route path='/kitchen' element={<MenuPage />}></Route>
         <Route path='/details' element={<Details />}></Route>
         <Route path='/bar' element={<MenuPage />}></Route>
+        <Route path='/deserts' element={<MenuPage />}></Route>
       </Routes>
     </BrowserRouter>
     </>

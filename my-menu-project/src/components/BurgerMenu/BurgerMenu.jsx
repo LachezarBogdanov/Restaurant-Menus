@@ -28,8 +28,8 @@ export default function BurgerMenu() {
                         <div className={styles.close} onClick={() => setIsActive(false)}><FontAwesomeIcon icon={faXmark} /></div>
                     </div>
                     <Link to={'/kitchen'}>Кухня</Link>
-                    <a href="#">Бар</a>
-                    <a href="#">Десерти</a>
+                    <Link to={'/bar'}>Бар</Link>
+                    <Link to={'/deserts'}>Десерти</Link>
                 </nav>
     </>
   );

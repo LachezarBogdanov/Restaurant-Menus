@@ -5,13 +5,15 @@ import styles from './MenuPage.module.css'
 import Products from '../Products/Products';
 import { useLocation } from 'react-router-dom';
 
-import { kitchenData, barData } from '../../menuConfig';
+import { kitchenData, barData, dessertData } from '../../menuConfig';
 
 export default function MenuPage() {
     const location = useLocation();
     const path = location.pathname.split('/')[1];
 
-    const currentConfig = path === 'bar' ? barData : kitchenData;
+    const currentConfig = path === 'bar' ? barData : 
+                      path === 'deserts' ? dessertData : 
+                      kitchenData;
 
     const [selectedCategory, setSelectedCategory] = useState(currentConfig.categories[0].name);
 
