@@ -178,21 +178,37 @@ export const kitchenData = {
 };
 
 export const barData = {
-    categories: [{ name: 'Коктейли' }, { name: 'Вино' }],
+    categories: [{ name: 'Топли напитки' }, { name: 'Безалкохолни напитки' }, {name: 'Алкохолни напитки'}, {name: 'Mocktails'}],
     details: {
-        'Коктейли': {
-            description: 'Авторски миксове и класика',
-            workingTime: '18:00 - 02:00',
-            bannerImg: 'cocktails-bg.webp',
+        'Топли напитки': {
+            description: 'Уют в чаша – от ароматно еспресо до авторски чайове за перфектен финал.',
+            workingTime: '10:00 - 00:00',
+            bannerImg: 'hotDrinks.webp',
             products: [
-                { name: 'Negroni', description: 'Джин, Вермут, Кампари', price: '12.00 eur.', img: 'negroni.webp' }
+                { name: 'Еспресо Selection', description: '100% Арабика с наситен аромат и кадифен каймак', price: '2.50 eur.', img: 'espresso.webp' },
+                { name: 'Капучино Класик', description: 'Пухкава млечна пяна и доза ароматно еспресо', price: '3.80 eur.', img: 'capuccino.webp' },
+                { name: 'Флет Уайт', description: 'Двойно ристрето с копринено мляко за истински ценители', price: '4.20 eur.', img: 'flat_white.webp' },
+                { name: 'Мурсалски чай', description: 'Традиционен планински чай с мед и лимон', price: '3.50 eur.', img: 'mursalski.webp' },
+                { name: 'Горещ шоколад', description: 'Гъст белгийски шоколад с добавка от маршмелоу', price: '4.90 eur.', img: 'hot_choco.webp' }
             ]
         },
-        'Вино': {
-            description: 'Селектирани изби',
+        'Безалкохолни напитки': {
+            description: 'Свежест без компромиси – домашни лимонади и натурални вкусове.',
             workingTime: '12:00 - 00:00',
             bannerImg: 'wine-bg.webp',
             products: []
-        }
+        },
+        'Алкохолни напитки': {
+            description: 'Изящна селекция от класически коктейли и премиум отлежали питиета.',
+            workingTime: '12:00 - 00:00',
+            bannerImg: 'wine-bg.webp',
+            products: []
+        },
+        'Mocktails': {
+            description: 'Целият блясък на коктейлите, но без капка алкохол. Наслада за сетивата.',
+            workingTime: '12:00 - 00:00',
+            bannerImg: 'wine-bg.webp',
+            products: []
+        },
     }
 };
