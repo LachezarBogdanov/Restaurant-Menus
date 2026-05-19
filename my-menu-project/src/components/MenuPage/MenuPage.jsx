@@ -3,9 +3,10 @@ import AsideMenu from '../AsideMenu/AsideMenu';
 import KitchenPageFooter from '../KitchenPageFooter/KitchenPageFooter';
 import styles from './MenuPage.module.css'
 import Products from '../Products/Products';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { kitchenData, barData, dessertData } from '../../menuConfig';
+import Footer from '../Footer/Footer';
 
 export default function MenuPage() {
     const location = useLocation();
@@ -26,7 +27,7 @@ export default function MenuPage() {
     return (
         <>
             <AsideMenu selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-
+            <Link to={'/'} className={styles.back}><i class="fa-solid fa-arrow-left"></i> Начало</Link>
             <div className={styles.wrapper}>
                 <section
                     className={styles.heading}

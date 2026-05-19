@@ -1,10 +1,8 @@
-
 .pageFooter {
     display: flex;
     margin-top: 1.5em;
-    margin-left: 20em;
     gap: 7em;
-    width: 75%;
+    width: 100%;
     background-color: red;
     justify-content: center;
     background-color: rgb(31, 3, 3);
@@ -39,4 +37,28 @@
 
 .specials p {
     color: #bababa;
+}
+
+@media screen and (max-width: 1150px) {
+    /* .pageFooter {
+        flex-direction: column;
+        gap: 0;
+        padding-left: 1em;
+        margin-bottom: -1em;
+    }
+
+    .footerCard:not(:nth-child(3))::after {
+    content: '';
+    position: absolute;
+    right: 60px;
+    top: 85px;
+    left: 8%;
+    width: 80%;
+    height: 0.1px;
+    background-color: #bababa;
+} */
+
+.pageFooter {
+    display: none;
+}
 }
