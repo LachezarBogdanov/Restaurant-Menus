@@ -84,3 +84,31 @@ aside {
 .icons > * {
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 1150px) {
+    aside { 
+        width: 100%;
+        position: relative !important; 
+        width: 100% !important;
+        height: auto !important;   
+        flex-direction: row !important;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em !important;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .workingTime, .icons {
+        display: none !important;
+    }
+
+    .categories {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1em;
+        margin: 0 !important;
+    }
+}
