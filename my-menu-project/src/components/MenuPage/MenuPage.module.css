@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    overflow: hidden; /* Спира всякакъв скрол на самия wrapper */
+    overflow: hidden; 
     
     background: radial-gradient(
       circle at top right,
@@ -66,6 +66,7 @@
 }
 
 .products {
+    padding: 1em;
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     
@@ -75,7 +76,8 @@
     box-sizing: border-box;
     
     max-height: 70vh; 
-    overflow-y: auto;  
+    overflow-y: auto; 
+    overflow-x: hidden;  
 }
 
 .products::-webkit-scrollbar {
