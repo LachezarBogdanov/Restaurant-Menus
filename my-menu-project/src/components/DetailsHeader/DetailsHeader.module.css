@@ -155,3 +155,30 @@
     color: #ff0000; 
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 1150px) {
+    .detailsHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .favourite {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .buttons {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .buttons > * {
+        width: 90%;
+    }
+}

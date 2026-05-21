@@ -4,7 +4,6 @@
     position: relative;
 }
 
-
 .backToMenu {
     display: flex;
     align-items: center;
@@ -24,4 +23,13 @@
 
 .backToMenu:hover {
     background-color: #f68606; 
+}
+
+@media screen and (max-width: 1150px) {
+    .allWrap {
+        height: auto !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
 }

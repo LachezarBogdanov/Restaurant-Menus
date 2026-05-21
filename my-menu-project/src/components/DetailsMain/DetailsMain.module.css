@@ -39,9 +39,11 @@
 }
 
 .ingCards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 1em;
     margin-top: 0.5em;
+    align-items: center;
 }
 
 .ingridients {
@@ -56,8 +58,9 @@
 }
 
 .alerCards {
-    display: flex;
-    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1em;
 }
 
 .alerCards p i {
@@ -66,6 +69,48 @@
 }
 
 .mealsWrapper {
-    display: flex;
-    gap: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5em; 
+    width: 100%;
+    box-sizing: border-box;
+    
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.mealsWrapper > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important; 
+    box-sizing: border-box;
+    
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+@media screen and (max-width: 1150px) {
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    .description::after {
+        display: none;
+    }
+
+    .meals {
+        width: 80%;
+    }
+
+    .mealsWrapper {
+        grid-template-columns: 1fr !important; 
+        gap: 1.2em; 
+    }
 }
